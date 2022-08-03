@@ -83,17 +83,17 @@ docker stop acr-app2
 ### Build, Test Locally, Tag and Push to ACR
 ```
 # Export Command
-export ACR_REGISTRY=acrdemo2ss.azurecr.io
+export ACR_REGISTRY=aksdevopsacralper.azurecr.io
 export ACR_NAMESPACE=app2
 export ACR_IMAGE_NAME=acr-app2
-export ACR_IMAGE_TAG=v1
+export ACR_IMAGE_TAG=v2
 echo $ACR_REGISTRY, $ACR_NAMESPACE, $ACR_IMAGE_NAME, $ACR_IMAGE_TAG
 
 # Login to ACR
 docker login $ACR_REGISTRY
 
 # Tag
-docker tag acr-app2:v1  $ACR_REGISTRY/$ACR_NAMESPACE/$ACR_IMAGE_NAME:$ACR_IMAGE_TAG
+docker tag acr-app2:v2  $ACR_REGISTRY/$ACR_NAMESPACE/$ACR_IMAGE_NAME:$ACR_IMAGE_TAG
 It replaces as below
 docker tag acr-app2:v1 acrdemo2ss.azurecr.io/app2/acr-app2:v1
 
