@@ -5,3 +5,5 @@ resource "azurerm_resource_group" "aks_rg" {
   location = var.location
   
 }
+
+
